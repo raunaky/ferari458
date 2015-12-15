@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Tweet Shirt</title>
+	<script type="text/javascript" src = "tweets.js"></script>
+	<link rel="stylesheet" type="text/css" href="tweets.css">
+</head>
+<body>
+ <form>
+ <canvas height = "200" width = "700" id="tshirtCanvas"></canvas>
+ <p>
+	<label for="backgroundColor">Select background color :</label>
+	<select id="backgroundColor">
+		<option value = "none" selected="selected">None</option>
+			<option value ="white">White</option>
+			<option value="black">Black</option>
+			<option value="yellow">Yellow</option>
+	</select>
+ </p>
+ <p>
+	<label for="backgroundShape">Circles or Squares?:</label>
+	<select id="backgroundShape">
+		<option value ="none" selected = "selected">None</option>
+		<option value= "square">Square</option>
+		<option value = "circle">Circles</option>
+	</select>
+</p>
+
+ <p>
+	<label for="foregroundColor">Select the color of the text :</label>
+		<select id="foregroundColor">
+			<option value="none">None</option>
+			<option value="black">Black</option>
+			<option value = "white">White</option>
+		</select>
+ </p>
+
+  <p>
+	<label for="tweets">Select the color of the text :</label>
+		<select id="tweets">
+			
+		</select>
+ </p>
+<input type="button" value="preview" id="preview">
+</form>
+<script src="http://tweetshirt.wickedlysmart.com/?callback=updateTweets"></script>
+</body>
+</html>
