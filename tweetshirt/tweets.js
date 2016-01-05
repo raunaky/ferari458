@@ -1,4 +1,4 @@
-
+//Just a tweet shirt app 
 window.onload = function(){
 
 var previewButton = document.getElementById("preview");
