@@ -1,24 +1,37 @@
-/* myLoc.js */
 
 var map = null;
 var ourCoords =  {
 	latitude: 47.624851,
 	longitude: -122.52099
 };
+var watchId = null;
+window.onload = getMylocation;
 
-window.onload = getMyLocation;
+function getMylocation() {
+	if(navigator.geolocation) {
 
-function getMyLocation() {
-	if (navigator.geolocation) {
+		var watchButton = document.getElementById("watch");
+		watchButton.onclick = watchLocation;
 
-		navigator.geolocation.getCurrentPosition(
-			displayLocation, 
-			displayError);
+		var clearWatchButton = document.getElementById("clearWatch");
+		clearWatchButton.onclick = clearWatch;
 	}
 	else {
 		alert("Oops, no geolocation support");
 	}
 }
+
+function watchLocation () {
+	watchId = navigator.geolocation.watchPosition(displayLocation, displayError);
+}
+
+function clearWatch () {
+	if(watchId) {
+		navigator.geolocation.clearWatch(watchId);
+		watchId = null;
+	}
+}
+
 
 function displayLocation(position) {
 	var latitude = position.coords.latitude;
@@ -31,7 +44,11 @@ function displayLocation(position) {
 	var distance = document.getElementById("distance");
 	distance.innerHTML = "You are " + km + " km from the WickedlySmart HQ";
 	distance.innerHTML+="(with" +position.coords.accuracy + "meters accuracy)";
+	if(map == null){
 	showMap(position.coords);
+	}else {
+		scrollMapToPosition(position.coords);
+	}
 }
 
 
@@ -99,6 +116,16 @@ function addMarker(map, LatLng, title,content) {
 	google.maps.event.addListener(marker,"click",function(){
 		infoWindow.open(map);
 	})
+ }
+
+ function scrollMapToPosition(coords) {
+ 	var latitude = coords.latitude;
+ 	var longitude = coords.longitude;
+
+ 	var latAndLong = new google.maps.LatLng (latitude,longitude);
+ 	map.panTo(latAndLong);
+
+ 	addMarker(map,latAndLong,"You moved to :" + latitude + "," + longitude);
  }
 
 function displayError(error) {
