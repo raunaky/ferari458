@@ -1,0 +1,31 @@
+#controls {
+
+	clear: both;
+
+}
+
+#my_hand {
+
+	clear: both;
+	border: 1px solid #cfcfcf;
+	height: 250px;
+	width: 835px;
+}
+
+#btnStick,#btnHit,#btnRestart {
+
+	display: none;
+	float: left;
+
+}
+
+h3 {
+
+	display: inline;
+	padding-right: 40px;
+}
+
+.current_hand {
+
+	float: right;
+}
