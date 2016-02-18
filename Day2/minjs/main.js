@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".guess_box").click(function(){$(".guess_box p").remove();var o=Math.floor(5*Math.random()+5),n="<p> Your discount is "+o+"%</p>";$(this).append(n)})});
