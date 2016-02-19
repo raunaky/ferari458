@@ -1,0 +1,37 @@
+@import "heading.css";
+@import "paragraph.css";
+
+* {
+	font-family: Arial-black;
+}
+
+div * {
+	font-family: "Comic Sans",cursive,sans-serif;
+}
+
+.sitelink {
+	font-family: Georgia, serif;
+}
+
+#tonyquote {
+	font-family: "Lucidia Sans Unicode", "Lucidia Grande" , sans-serif;
+	color: black;
+}
+
+h3 + p {
+	font-style: italic;
+}
+
+h3 + p > a {
+	color: red;
+}
+p[class] {
+	background-color: gray;
+}
+
+p[id] {
+	background-color: yellow;
+}
+*[alt~="nintendo"] {
+	background: orange;
+}

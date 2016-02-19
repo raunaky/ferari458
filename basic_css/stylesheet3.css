@@ -1,0 +1,61 @@
+#top-left-pos {
+	background-color: #89cff0;
+	border: 0.1em solid black;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	z-index: 4;
+}
+#bottom-right-tl-parent {
+	background-color: #B0BF1A;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#top-right-pos {
+	background-color: #89cff0;
+	border: 0.1em solid black;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+#bottom-left-tr-parent {
+	background-color: #AF002A;
+	border: 0.1em solid black;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+#fixed-pos {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #89cff0;
+	border: 0.1em solid black;
+	margin: 0;
+
+}
+#relative-1 {
+	background-color: #3B7A57;
+	border: 0.1em solid black;
+	height: 100px;
+}
+#relative-2 {
+	position: relative;
+	background-color: #FFBF00;
+	top: 20px;
+	left: 30px;
+	width: 300px;
+	border:0.1em solid black;
+}
+img[src="LittleBrain.png"] {
+	float: left;
+	padding: 10px;
+}
