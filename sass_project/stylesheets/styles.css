@@ -1,0 +1,1132 @@
+/*
+You can define a default that is used only if a value isn't
+assigned any place else
+
+$default-text-color: $black !default;
+*/
+/* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
+/**
+ * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
+ * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
+ * body `font-size` is set using `em` units.
+ */
+/* line 106, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 67, ../sass/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 79, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 93, ../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 114, ../sass/partials/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  *display: inline;
+  *zoom: 1;
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 133, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ */
+/* line 143, ../sass/partials/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 152, ../sass/partials/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 164, ../sass/partials/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 173, ../sass/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 185, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 193, ../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+/* line 203, ../sass/partials/_normalize.scss */
+blockquote {
+  margin: 1.5em 40px;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 212, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 221, ../sass/partials/_normalize.scss */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+/* line 236, ../sass/partials/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 242, ../sass/partials/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
+}
+
+/* line 248, ../sass/partials/_normalize.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 254, ../sass/partials/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
+}
+
+/* line 260, ../sass/partials/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 272, ../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+/* line 283, ../sass/partials/_normalize.scss */
+p,
+pre {
+  margin: 1.5em 0;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 293, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 301, ../sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 309, ../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 313, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 325, ../sass/partials/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0;
+}
+
+/* line 346, ../sass/partials/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 354, ../sass/partials/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 366, ../sass/partials/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 381, ../sass/partials/_normalize.scss */
+img {
+  border: 0;
+  /* Improve image quality when scaled in IE 7. */
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 394, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 406, ../sass/partials/_normalize.scss */
+figure {
+  margin: 1.5em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 415, ../sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 424, ../sass/partials/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 432, ../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 456, ../sass/partials/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ * 4. Address `font-family` inconsistency between `textarea` and other form in IE 7
+ * 5. Improve appearance and consistency with IE 6/7.
+ */
+/* line 470, ../sass/partials/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  *font-family: sans-serif;
+  /* 4 */
+  *vertical-align: middle;
+  /* 5 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 488, ../sass/partials/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 499, ../sass/partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 514, ../sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 529, ../sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 538, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 549, ../sass/partials/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 564, ../sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 581, ../sass/partials/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 592, ../sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+}
+/* line 602, ../sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 612, ../sass/partials/_normalize.scss */
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-width: 0.0625em;
+  border-top-style: solid;
+  padding-top: 0.4625em;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 0.9125em;
+  border-left-width: 0.0625em;
+  border-left-style: solid;
+  padding-left: 0.875em;
+  border-right-width: 0.0625em;
+  border-right-style: solid;
+  padding-right: 0.875em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 628, ../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 642, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 651, ../sass/partials/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 662, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 667, ../sass/partials/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, ../sass/partials/_base.scss */
+body {
+  font-family: Arial,Helvetica, sans-serif;
+  font-size: 1em;
+  background: #808080;
+  line-height: 1em;
+  color: #000000;
+}
+
+/* line 9, ../sass/partials/_base.scss */
+#wrapper {
+  background: #FFFFFF;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* line 19, ../sass/partials/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 25, ../sass/partials/_base.scss */
+article p a {
+  color: #0000FF;
+}
+/* line 27, ../sass/partials/_base.scss */
+article p a:hover, article p a:focus {
+  color: #001A57;
+}
+/* line 30, ../sass/partials/_base.scss */
+article p a:visited {
+  color: #6699CC;
+}
+
+/* line 9, ../sass/styles.scss */
+#banner {
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+/* line 14, ../sass/styles.scss */
+#logo {
+  width: 24px;
+  height: auto;
+}
+
+/* line 19, ../sass/styles.scss */
+#logo-text {
+  vertical-align: 50%;
+  color: #00647D;
+  font-weight: bold;
+}
+
+/* line 25, ../sass/styles.scss */
+#search-input {
+  width: 302px;
+  vertical-align: 50%;
+}
+
+/* line 30, ../sass/styles.scss */
+#search-button {
+  vertical-align: 80%;
+  background-color: #00647D;
+  padding: 5px 12px;
+  font: 13px sans-serif;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-color: #aaa #444 #444 #aaa;
+  color: #FFF;
+}
+
+/* line 41, ../sass/styles.scss */
+#horz-nav {
+  background-color: #00647D;
+  max-width: 800px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+/* line 48, ../sass/styles.scss */
+#horz-nav p {
+  padding-top: 10px;
+}
+
+/* line 52, ../sass/styles.scss */
+#horz-nav p a {
+  text-decoration: none;
+  color: #FFF;
+  padding-left: 10px;
+}
+
+/* line 58, ../sass/styles.scss */
+#horz-nav p a:hover {
+  color: #FF7F00;
+}
+
+/* line 62, ../sass/styles.scss */
+#sidebar-left {
+  float: left;
+  width: 109px;
+  padding-left: 10px;
+}
+
+/* line 70, ../sass/styles.scss */
+#vert-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7em;
+  width: 80px;
+}
+
+/* line 78, ../sass/styles.scss */
+#vert-nav ul li a {
+  text-decoration: none;
+  color: #00647D;
+}
+
+/* line 83, ../sass/styles.scss */
+#sidebar-right {
+  float: right;
+  width: 213px;
+}
+
+/* line 88, ../sass/styles.scss */
+.right-sidebar-title {
+  color: #00647D;
+  font-weight: bold;
+}
+
+/* line 93, ../sass/styles.scss */
+#content {
+  margin: 0px 213px 0px 109px;
+  padding: 0px;
+}
+
+/* line 98, ../sass/styles.scss */
+#content section h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #00647D;
+  line-height: 1em;
+}
+
+/* line 105, ../sass/styles.scss */
+#feature-image {
+  height: auto;
+  width: 100%;
+  max-width: 440px;
+  background: #808080;
+}
+
+/* line 112, ../sass/styles.scss */
+.right-sidebar-image {
+  height: 93px;
+  width: 179px;
+  background: #808080;
+  margin: 12px 0px;
+}
+
+/* line 119, ../sass/styles.scss */
+footer {
+  clear: both;
+  background: #00647D;
+  color: #FFF;
+  padding: 10px;
+}
+
+/* line 129, ../sass/styles.scss */
+.left-sidebar-links a {
+  display: block;
+  color: #00647D;
+  opacity: .7;
+}
+/* line 133, ../sass/styles.scss */
+.left-sidebar-links a:hover {
+  opacity: 1;
+}
+
+/* line 139, ../sass/styles.scss */
+.left-sidebar-links {
+  border-bottom: 2px solid #00647D;
+}
+/* line 141, ../sass/styles.scss */
+.left-sidebar-links:last-child {
+  border: none;
+}
+
+/* line 148, ../sass/styles.scss */
+.example-element {
+  border-top: 1px solid #0000FF;
+  border-right: 1px solid #FF0000;
+  border-bottom: 1px solid #FFFF00;
+  border-left: 1px solid #00FF00;
+}
+
+/* line 158, ../sass/styles.scss */
+#riddle, #riddle-answer {
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #F0F8FF;
+}
+
+/* line 164, ../sass/styles.scss */
+#riddle-answer {
+  margin-top: 10px;
+}
+
+/* line 171, ../sass/styles.scss */
+#riddle-answer {
+  border: 2px dotted #001A57;
+  margin: 10px 0px;
+}
+
+/* line 182, ../sass/styles.scss */
+.left-sidebar-links {
+  border-color: #e3f9ff;
+}
+
+/* line 188, ../sass/styles.scss */
+#search-button {
+  background-color: #7d1900;
+}
+
+/* line 193, ../sass/styles.scss */
+#search-button:hover {
+  background-color: #58007d;
+}
+
+/* line 200, ../sass/styles.scss */
+#vert-nav ul li:nth-child(1) {
+  background-color: #997f66;
+}
+
+/* line 205, ../sass/styles.scss */
+#vert-nav ul li:nth-child(2) {
+  background-color: #ff7f00;
+}
+
+/* line 212, ../sass/styles.scss */
+#vert-nav ul li:nth-child(3) {
+  background-color: rgba(255, 127, 0, 0.5);
+}
+
+/* line 217, ../sass/styles.scss */
+#vert-nav ul li:nth-child(3) {
+  background-color: #ff7f00;
+}
+
+/* line 223, ../sass/styles.scss */
+#vert-nav ul li:nth-child(4) {
+  background-color: rgba(0, 0, 200, 0.5);
+}
+
+/* line 229, ../sass/styles.scss */
+#vert-nav ul li:nth-child(5) {
+  background-color: #ffff80;
+}
+
+/* line 235, ../sass/styles.scss */
+#vert-nav ul li:nth-child(6) {
+  background-color: gray;
+}
+
+/*
+adjust-color allows you to adjust
+red, green and blue : 0 to 255
+hue : 0 to 359
+saturation : 0 to 100
+lightness : 0 to 100
+alpha : 0 to 1
+Either adjust RGB or HSL
+*/
+/* line 248, ../sass/styles.scss */
+#vert-nav ul li:nth-child(7) {
+  background-color: #008c9b;
+}
+
+/* line 253, ../sass/styles.scss */
+#vert-nav ul li:nth-child(7) {
+  background-color: #175dff;
+}
+
+/* line 259, ../sass/styles.scss */
+#vert-nav ul li:nth-child(8) {
+  background-color: olive;
+}
+
+/* line 265, ../sass/styles.scss */
+#vert-nav ul li:nth-child(9) {
+  background-color: #ffff80;
+}
+
+/* line 270, ../sass/styles.scss */
+#riddle-answer {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 5px 5px 5px 2px gray;
+  -webkit-box-shadow: 5px 5px 5px 2px gray;
+  box-shadow: 5px 5px 5px 2px gray;
+}
+
+/* line 277, ../sass/styles.scss */
+#main-title {
+  text-shadow: rgba(0, 0, 255, 0.2) 2px 2px 3px;
+}
+
+/* line 284, ../sass/styles.scss */
+footer, #horz-nav {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMwMDY0N2QiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(80%, #00647d), color-stop(100%, #ffffff));
+  background-image: -moz-linear-gradient(left, #00647d 80%, #ffffff);
+  background-image: -webkit-linear-gradient(left, #00647d 80%, #ffffff);
+  background-image: linear-gradient(to right, #00647d 80%, #ffffff);
+}
+
+/* line 299, ../sass/styles.scss */
+img[alt="Programming Frameworks"] {
+  content: url('/images/featured-image.png');
+  /*
+  width: image-width('../images/featured-image.png');
+  height: image-height('../images/featured-image.png');
+  */
+}
+
+/* line 310, ../sass/styles.scss */
+#logo {
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+  -moz-transform: translateX(700px) translateY(10px) scale(2, 2) rotate(-45deg);
+  -ms-transform: translateX(700px) translateY(10px) scale(2, 2) rotate(-45deg);
+  -webkit-transform: translateX(700px) translateY(10px) scale(2, 2) rotate(-45deg);
+  transform: translateX(700px) translateY(10px) scale(2, 2) rotate(-45deg);
+}
+
+/* line 318, ../sass/styles.scss */
+article p:nth-child(2) {
+  -webkit-filter: drop-shadow(#808080 1px 1px 0px);
+  filter: drop-shadow(#808080 1px 1px 0px);
+}
+
+/* line 331, ../sass/styles.scss */
+#riddle, #riddle-answer {
+  background-color: #B2BEB5;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(1) {
+  background-color: #fffff2;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(2) {
+  background-color: #ffffe6;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(3) {
+  background-color: #ffffd9;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(4) {
+  background-color: #ffffcc;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(5) {
+  background-color: #ffffbf;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(6) {
+  background-color: #ffffb3;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(7) {
+  background-color: #ffffa6;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(8) {
+  background-color: #ffff99;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(9) {
+  background-color: #ffff8c;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(10) {
+  background-color: #ffff80;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(11) {
+  background-color: #ffff73;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(12) {
+  background-color: #ffff66;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(13) {
+  background-color: #ffff59;
+}
+
+/* line 341, ../sass/styles.scss */
+#vert-nav ul li:nth-child(14) {
+  background-color: #ffff4d;
+}
+
+/*
+@import "compass/utilities/sprites";
+
+@import "icons/*.png";
+
+@include all-icons-sprites;
+
+.icons {
+  .clock { @include icons-sprite(clock);}
+  .diary { @include icons-sprite(diary);}
+  .printer { @include icons-sprite(printer);}
+  .weather { @include icons-sprite(weather);}
+}
+
+.icons * {
+  height: 64px;
+  width: 64px;
+}
+*/
+/* line 377, ../sass/styles.scss */
+.baseball-stats table {
+  border: 4px solid #001A57;
+  width: 400px;
+}
+/* line 2, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.baseball-stats table th {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 5, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.baseball-stats table td,
+.baseball-stats table th {
+  padding: 2px;
+}
+/* line 8, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_scaffolding.scss */
+.baseball-stats table td.numeric,
+.baseball-stats table th.numeric {
+  text-align: right;
+}
+/* line 16, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table th, .baseball-stats table td {
+  border-right: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left-width: 0;
+  border-top-width: 0;
+}
+/* line 22, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table th:last-child, .baseball-stats table td:last-child {
+  border-right-width: 0;
+}
+/* line 28, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table th.last, .baseball-stats table td.last {
+  border-right-width: 0;
+}
+/* line 33, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table tbody tr:last-child th, .baseball-stats table tbody tr:last-child td, .baseball-stats table tfoot tr:last-child th, .baseball-stats table tfoot tr:last-child td {
+  border-bottom-width: 0;
+}
+/* line 37, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table tbody tr.last th, .baseball-stats table tbody tr.last td, .baseball-stats table tfoot tr.last th, .baseball-stats table tfoot tr.last td {
+  border-bottom-width: 0;
+}
+/* line 6, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table thead th {
+  border-bottom: 4px solid #001A57;
+}
+/* line 9, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table tfoot th, .baseball-stats table tfoot td {
+  border-top: 4px solid #001A57;
+}
+/* line 12, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_borders.scss */
+.baseball-stats table th:first-child {
+  border-right: 4px solid #001A57;
+}
+/* line 2, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table th {
+  background-color: #FFFFFF;
+}
+/* line 4, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table th.even, .baseball-stats table th:nth-child(2n) {
+  background-color: white;
+}
+/* line 8, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table tr.odd td, .baseball-stats table tr:nth-child(2n+1) td {
+  background-color: #B2BEB5;
+}
+/* line 10, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table tr.odd td.even, .baseball-stats table tr.odd td:nth-child(2n), .baseball-stats table tr:nth-child(2n+1) td.even, .baseball-stats table tr:nth-child(2n+1) td:nth-child(2n) {
+  background-color: #b2beb5;
+}
+/* line 14, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table tr.even td {
+  background-color: #F0F8FF;
+}
+/* line 16, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table tr.even td.even, .baseball-stats table tr.even td:nth-child(2n) {
+  background-color: aliceblue;
+}
+/* line 19, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table tfoot th, .baseball-stats table tfoot td {
+  background-color: white;
+}
+/* line 21, ../../../../.rvm/gems/ruby-2.2.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/tables/_alternating-rows-and-columns.scss */
+.baseball-stats table tfoot th.even, .baseball-stats table tfoot th:nth-child(2n), .baseball-stats table tfoot td.even, .baseball-stats table tfoot td:nth-child(2n) {
+  background-color: white;
+}

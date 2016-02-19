@@ -1,0 +1,5 @@
+ //mixins are basically user defined functions basically kind of a black box 
+
+ @mixin default-font-color($tc) {
+ 	color : $tc;
+ }
