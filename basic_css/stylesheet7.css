@@ -1,0 +1,31 @@
+div#div1,div#div2,div#div3 {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	border: 3px solid black;
+}
+
+#div1 {
+	box-shadow: 5px 5px 5px 2px gray;
+}
+#div2 {
+	box-shadow: 5px 5px 5px 2px gray inset;
+}
+/*//creating a glow effect*/
+#div3 {
+	box-shadow: 0 0 10px 5px yellow;
+}
+div#div4,div#div5 {
+	height: 30px;
+	width: 30px;
+	font: 20pt Arial;
+}
+
+#div4 {
+	text-shadow	:2px 2px 3px gray;
+}
+
+
+#div5 {
+	text-shadow	:0 0  5px yellow;
+}
