@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Testing</title>
+	<script type="text/javascript">
+
+		window.onload = function(){
+				
+				function sum(a){
+					var input = a;
+
+					function val(b){
+						 input +=b;
+						 return val;
+					}
+					val.toString = function (){
+						return sum;
+					}
+					return val;
+				}
+
+				alert( sum(5)(-1)(2));
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

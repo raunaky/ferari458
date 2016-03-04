@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Event bubbling</title>
+</head>
+<style type="text/css">
+ 	 #div1 {
+ 	 	border: 2px solid black;
+ 	 	width: 300px;
+ 	 	height: 300px;
+ 	 	padding: 30px;
+ 	 }
+
+ 	 #div2 {
+ 	 	border: 2px solid black;
+ 	 	width :200px;
+ 	 	height: 200px;
+ 	 	padding: 30px;
+
+ 	 }
+ 	 #div3 {
+ 	 	border: 2px solid black;
+ 	 	width :100px;
+ 	 	height: 100px;
+ 	 	padding: 30px;
+ 	 }
+ 	 
+</style>
+<script type="text/javascript">
+	window.onload = function(){
+
+		var button = document.getElementById('check');
+		button.onclick = function(){
+		var result=	pali();
+			if (result===true) {
+				alert('The String is a palindrome');
+			} else{
+				alert('The string is not a palindrome');
+			};
+		}
+
+		var pali = function(str) {
+			// var str = document.getElementById('pali');
+			if (str.charAt(0) ===str.charAt[str.length-1]) {
+				str= str.substr(str.charAt(0),str.charAt(str.length-1))
+				return true;
+			} else{
+				return false;
+			};
+		}
+	}
+
+</script>
+<body>
+		<div id="div1" onclick="style='border: 3px solid red;'">DIV1 Click
+
+			<div id="div2" onclick="style='border: 3px solid red;'" >DIV2 Click
+
+					<div id="div3" onclick="style='border: 3px solid red;'" >DIV3 Click</div>
+			
+			</div>
+		</div>
+
+		Enter the palindrome:<input type= "text" id="pali"/>
+		<button id="check">Check</button>
+
+
+</body>
+</html>
