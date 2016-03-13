@@ -1,0 +1,27 @@
+<!-- all the stuffs related to controller, view and scope -->
+
+<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+	<meta charset = "UTF-8">
+	<title>Basic of Views , $scope And Controllers </title>
+</head>
+<body  data-ng-controller = "SimpleController">
+	<input type = "text" ng-model = "name">
+	<ul>
+		<li data-ng-repeat = "person in customers | filter:name | orderBy:'city'">{{person.name | uppercase}}- {{person.city |lowercase}} </li>
+	</ul>
+<script type="text/javascript" src="scripts/AngularJS v1.5.0.js" ></script>
+<script type="text/javascript">
+	function SimpleController($scope){
+		$scope.customers=[
+		{name:'John Smith' ,city: 'pheonix'},
+		{name:'John Doe' ,city: 'Atlanta'},
+		{name:'Jane' ,city: 'Montreal'}
+		];
+
+	}
+
+</script>
+</body>
+</html>

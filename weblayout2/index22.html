@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>TESTER</title>
+
+</head>
+<body>
+<form id="my_form" method = "GET" action="./two.html">
+<label for ="firstName">Firstname :<input id = "fname"/> </label><br>
+<label for ="firstName">LastName: <input id = "l name"/> </label><br>
+<a href="two.html">A click to a (URL)</a>
+</form>
+<script type="text/javascript">
+
+window.onload = function(){
+
+	var fname = document.getElementById('fname');
+	var lname = document.getElementById('lname');
+
+	lname.onblur = function(evnt) {
+		if (window.localStorage) {
+
+		window.localStorage.setItem("fname",fname.value);
+		window.localStorage.setItem("lname",lname.value);
+	} else{
+		alert("No localStorage support in your browser");
+	};
+	}
+	
+}
+
+</script>
+</body>
+</html>
