@@ -1,0 +1,50 @@
+[
+	{
+		"month":"Jan",
+		"expense" : "250"
+	},
+	{
+		"month":"Feb",
+		"expense" : "650"
+	},
+	{
+		"month":"Mar",
+		"expense" : "750"
+	},
+	{
+		"month":"Apr",
+		"expense" : "500"
+	},
+	{
+		"month":"May",
+		"expense" : "150"
+	},
+	{
+		"month":"Jun",
+		"expense" : "300"
+	},
+	{
+		"month":"Jul",
+		"expense" : "450"
+	},
+	{
+		"month":"Aug",
+		"expense" : "850"
+	},
+	{
+		"month":"Sept",
+		"expense" : "900"
+	},
+	{
+		"month":"Oct",
+		"expense" : "300"
+	},
+	{
+		"month":"Nov",
+		"expense" : "100"
+	},
+	{
+		"month":"Dec",
+		"expense" : "150"
+	}
+]
