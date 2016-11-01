@@ -11,6 +11,7 @@ $(document).ready(function(){
 			$m = $(".meat").detach();
 			$(".tofu").parent().parent().addClass("veg_leaf");
 			v = true;
+			
 		};
 		//end if
 		// end of the go Vegeterian button
