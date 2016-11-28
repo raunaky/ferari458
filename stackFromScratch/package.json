@@ -1,0 +1,17 @@
+{
+ "name": "stackFromScratch",
+ "version": "1.0.0",
+ "description": "javascript boilerplate",
+ "main": "index.js",
+ "repository": "https://github.com/raunaky/ferari458",
+ "author": "rauny",
+ "license": "MIT",
+ "scripts": {
+  "start": "node .",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "tutorial-test": "yarn start"
+ },
+ "dependencies": {
+  "color": "^0.11.4"
+ }
+}
